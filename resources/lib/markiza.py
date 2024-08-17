@@ -103,6 +103,11 @@ class markizaContentProvider(ContentProvider):
         item['url'] = self.base_url + "live/22-krimi"
         item['img'] = "https://upload.wikimedia.org/wikipedia/commons/0/0a/Logo_Mark%C3%ADza_KRIMI.png"
         result.append(item)
+        item = self.video_item()
+        item['title'] = 'Live Klasik'
+        item['url'] = self.base_url + "live/44-klasik"
+        item['img'] = "https://static.wikia.nocookie.net/logopedia/images/e/e4/Mark%C3%ADza_Klasik_orange.svg/revision/latest/scale-to-width-down/300?cb=20240607214836"
+        result.append(item)
         return result
 
     def _resolve_live(self, item):
